@@ -1,0 +1,29 @@
+.my-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.bootstrap-wrapper {
+  background-image: linear-gradient(rgb(255, 94, 0), white, green);
+}
+
+.my-form {
+  background-image: radial-gradient(white, yellow);
+}
+
+.reg-form {
+  background-image: linear-gradient(rgb(140, 0, 255), white, red);
+}
+
+.my-card {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.733),
+    white,
+    rgba(0, 0, 0, 0.637)
+  );
+}

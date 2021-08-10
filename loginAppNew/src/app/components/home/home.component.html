@@ -1,0 +1,21 @@
+<section fxLayout="column" fxFlexAlign="stretch">
+  <div>
+    <p>Welcome to Our Brand New Login Application</p>
+  </div>
+  <p>
+    In this Application we are going to work with different Packages as well as APIs.
+  </p>
+  <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
+    <!-- The selectedTabChange event is emitted when the active tab changes.-->
+    <!-- The focusChange event is emitted when the use navigates through tabs with keyboaed navigation-->
+    <mat-tab label="Material Components">
+      <p>We are going to use different material components to create nice looking angular application.</p>
+    </mat-tab>
+    <mat-tab label="NPM is fun">
+      <p>We are going to imports lots of NPM packages and learn different tools to integrate in our application.</p>
+    </mat-tab>
+    <mat-tab label="Fully Responsive Navigation Menu">
+      <p>By using Material components, we are going to create fully responsive navigation menu, with its side-bar as well.</p>
+    </mat-tab>
+  </mat-tab-group>
+</section>

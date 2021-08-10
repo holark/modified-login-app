@@ -1,0 +1,46 @@
+<div class="bootstrap-wrapper" style="background-image: linear-gradient(rgb(255, 94, 0), white, green)">
+  <div class="container mt">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="container text-center">
+        </div>
+        <h1 class="text-center">Login Here</h1>
+
+        <!-- Creating Form-->
+
+        <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input  name="email" type="text" autocomplete="off" formControlName="email" matInput required>
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input name="password" type="password" autocomplete="off" formControlName="password" matInput required>
+          </mat-form-field>
+
+          <div class="container text-center">
+            <button
+              type="submit"
+              mat-raised-button
+              color="primary"
+              [disabled]="!loginForm.valid">Login</button>
+            <button style="margin-left: 10px" type="reset" mat-raised-button color="accent">Reset</button>
+            <div class="separator">
+              <br>
+              <span class="material-icons" style="color: purple">filter_list</span>
+            </div>
+            <span style="color: red">New user   </span>
+            <button mat-stroked-button type="button" routerLink="/register">Sign Up</button>
+          </div>
+        </form>
+        <br>
+
+        <!-- <div class="g-signin2" data-onsuccess="onSignIn" >Google</div> -->
+        <!-- <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div> -->
+        <div class="container text-center">
+          <button class="btn btn-primary" (click)="signInWithGoogle()">Sign in with Google</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

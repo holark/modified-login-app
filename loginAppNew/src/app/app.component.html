@@ -1,0 +1,23 @@
+
+
+  <!-- router-outlet a placeholder used to load the different components dynamically based on the activated component or current route state-->
+<!-- <app-nav-bar>
+  <app-home></app-home>
+</app-nav-bar>
+<router-outlet></router-outlet> -->
+
+<app-layout>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+      <!-- this is a place for us to add side-nav code-->
+      <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <!-- In here all the content must reside. We will add a navigation header as well-->
+      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</app-layout>
